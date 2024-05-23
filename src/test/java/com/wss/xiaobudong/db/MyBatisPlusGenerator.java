@@ -11,11 +11,10 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 /**
- * 小滴课堂,愿景：让技术不再难学
  *
  * @Description
- * @Author 二当家小D
- * @Remark 有问题直接联系我，源码-笔记-技术交流群
+ * @Author
+ * @Remark
  * @Version 1.0
  **/
 public class MyBatisPlusGenerator {
@@ -97,6 +96,6 @@ public class MyBatisPlusGenerator {
 
         //6. 执行操作
         ag.execute();
-        System.out.println("======= 小滴课堂 Done 相关代码生成完毕  ========");
+        System.out.println("=======  相关代码生成完毕  ========");
     }
 }
