@@ -1,4 +1,4 @@
-package com.xiaobudong.xiaobudong;
+package com.wss.xiaobudong;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
