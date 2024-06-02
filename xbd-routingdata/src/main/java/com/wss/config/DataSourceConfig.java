@@ -22,8 +22,8 @@ public class DataSourceConfig {
         DynamicRoutingDataSource routingDataSource = new DynamicRoutingDataSource();
 
         Map<Object, Object> targetDataSources = new HashMap<>();
-        targetDataSources.put("dataSource1", createDataSource("jdbc:mysql://39.106.226.156:3306/xdxlass", "root", "xdxxmysql"));
-        targetDataSources.put("dataSource2", createDataSource("jdbc:mysql://39.106.226.156:3306/xdclass_user", "root", "xdxxmysql"));
+        targetDataSources.put("dataSource1", createDataSource("jdbc:mysql://ip:3306/xdxlass", "root", "mima"));
+        targetDataSources.put("dataSource2", createDataSource("jdbc:mysql://ip:3306/xdclass_user", "root", "mima"));
 
         routingDataSource.setTargetDataSources(targetDataSources);
         routingDataSource.setDefaultTargetDataSource(targetDataSources.get("dataSource1"));
