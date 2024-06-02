@@ -11,8 +11,13 @@
     <groupId>com.xiaobudong</groupId>
     <artifactId>xiaobudong</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>xiaobudong</name>
     <description>xiaobudong</description>
+    <modules>
+        <module>xbd-routingdata</module>
+        <module>xbd-common</module>
+    </modules>
     <properties>
         <java.version>1.8</java.version>
         <pf4j-spring.version>0.8.0</pf4j-spring.version>
