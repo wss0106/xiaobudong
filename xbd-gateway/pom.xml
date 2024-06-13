@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.wss</groupId>
-    <artifactId>xbd-routingdata</artifactId>
+    <artifactId>xbd-gateway</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
