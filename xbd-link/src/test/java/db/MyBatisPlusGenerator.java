@@ -1,4 +1,4 @@
-package com.common;
+package db;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -29,7 +29,7 @@ public class MyBatisPlusGenerator {
                 .setAuthor("xiaobudong")
                 // 生成路径，最好使用绝对路径，window路径是不一样的
                 //TODO  TODO  TODO  TODO
-                .setOutputDir("/Users/weishuaishuai/Documents/IDEA2023/xiaobudong/src/main/java")
+                .setOutputDir("/Users/weishuaishuai/Documents/IDEA2023/xiaobudong/xbd-link/src/main/java")
                 // 文件覆盖
                 .setFileOverride(true)
                 // 主键策略
@@ -57,9 +57,9 @@ public class MyBatisPlusGenerator {
         dsConfig.setDbType(DbType.MYSQL)
                 .setDriverName("com.mysql.cj.jdbc.Driver")
                 //TODO  TODO  TODO  TODO
-                .setUrl("jdbc:mysql://xx.xx.xx.xx:3306/xdxlass?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai")
-                .setUsername("xxx")
-                .setPassword("xxx");
+                .setUrl("jdbc:mysql://192.168.3.157:3306/xbd_link?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai")
+                .setUsername("wss")
+                .setPassword("wssmysql");
 
         //3. 策略配置globalConfiguration中
         StrategyConfig stConfig = new StrategyConfig();
@@ -81,7 +81,7 @@ public class MyBatisPlusGenerator {
 
         //4. 包名策略配置
         PackageConfig pkConfig = new PackageConfig();
-        pkConfig.setParent("com.wss.xiaobudong")
+        pkConfig.setParent("com.wss")
                 .setMapper("mapper")
                 .setService("service")
                 .setController("controller")
